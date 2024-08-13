@@ -19,7 +19,7 @@ const mainWorker :Workerd.Worker = (
   serviceWorkerScript = embed "hello.js",
   modules = [
     ( name = "worker",
-      esModule = embed ".wrangler/dist/read-post.js"
+      esModule = embed "hello.js"
     )
   ],
   compatibilityDate = "2024-02-19",
